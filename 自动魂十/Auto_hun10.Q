@@ -36,6 +36,8 @@ is_leader = 0//队长设置为1，队友设置为0
 do_times = 3//副本次数
 //-------------------------------------------
 cishu = 0
+Hwnd = Plugin.Window.Find(0, "阴阳师-网易游戏")
+Call Plugin.Window.Max(Hwnd)
 While do_times > 0 
     If is_leader = 1 Then 
         FindColor 792,220,819,245,"BCC6CE",intX1,intY1
